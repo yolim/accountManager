@@ -1,0 +1,24 @@
+<div class="form-group">
+	<label for="name" class="col-sm-2 control-label">Name</label>
+	<div class="col-sm-10">
+		<input type="text" ng-model="customer.name" class="form-control"
+			id="name" placeholder="Customer Name" />
+	</div>
+</div>
+<div class="form-group" ng-repeat="account in customer.accountList">
+    <label for="name" class="col-sm-2 control-label">Account Type</label>
+	<div class="col-sm-10">
+		<input type="text" ng-model="account.type" class="form-control"
+			id="type" placeholder="Customer Account Type" />
+	</div>
+	<label for="name" class="col-sm-2 control-label">Account Amount</label>
+	<div class="col-sm-10">
+		<input type="text" ng-model="account.amount" class="form-control"
+			id="amount" placeholder="Customer Account Amount" />
+	</div>
+</div>
+<div class="form-group">
+	<div class="col-sm-offset-2 col-sm-10">
+		<input type="submit" class="btn btn-primary" value="Save" />
+	</div>
+</div>

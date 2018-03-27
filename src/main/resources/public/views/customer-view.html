@@ -1,0 +1,21 @@
+<div class="container pad-top">
+  <table class="table customertable">
+      <tr>
+          <td><h3>Details for {{customer.name}}</h3></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Name</td>
+          <td>{{customer.name}}</td>
+      </tr>
+      <tr ng-repeat="account in customer.accountList">
+      		<td>Account Type</td>
+          	<td>{{account.type}}</td>
+          	<td>Account Amount</td>
+ 			<td>{{account.amount}}</td>
+      </tr>
+  </table>
+  <div>
+      <a class="btn btn-primary" ui-sref="editCustomer({id:customer.id})">Edit</a>
+  </div>
+</div>
